@@ -4,7 +4,7 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 // 啟用 Controller
-builder.Services.AddControllers();
+builder.Services.AddMvc();
 
 var app = builder.Build();
 

@@ -13,7 +13,7 @@ namespace min_api_add_mvc.Controllers
                     SHA1.Create().ComputeHash(
                         Encoding.UTF8.GetBytes(data.ToString())))
                 .Replace("-", string.Empty);
-            return Content($"<pre>{hash}</pre>", "text/html");
+            return View("Sha1", hash);
         }
     }
 }
